@@ -6,13 +6,15 @@
 <title>Madelyn Vagle</title>
 <!-- CSS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://use.typekit.net/iui6yes.css">
+<link rel="stylesheet" href="https://use.typekit.net/tgh4exf.css">
 <link rel="stylesheet" href="styles.css">
 
 <!-- jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- JavaScript -->
+<script src="https://unpkg.com/intersection-observer"></script>
+<script src="https://unpkg.com/scrollama"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
 
 <!-- Starts Foundation -->
@@ -39,7 +41,7 @@
         </div>
     </header>
     <main>
-        <section class="grid-container text-left margin-top-3">
+        <section class="grid-container text-left margin-top-3 top-half">
             <div class="grid-x">
                 <div class="medium-8 cell">
                     <div class="grid-x">
@@ -47,7 +49,7 @@
                             <img class="hey" src="construction.png" alt="construction emoji">
                         </div>
                         <div class="medium-9 cell">
-                            <h3>my portfolio is under construction, but in the mean time, check out my <strong><a href="https://github.com/boringem">github</a></strong> to see my code!</h3>
+                            <h3>my portfolio is under construction, but in the meantime, check out my <strong><a href="https://github.com/boringem">github</a></strong> to see my code!</h3>
                         </div>
                     </div>
                     <h2>I'm currently a web development student at Belmont University.</h2>
@@ -61,8 +63,50 @@
                 </div>
             </div>
         </section>
+        <div id="scrolly">
+        <section id="work">
+            <div class="grid-x margin-top-3 init-back step mcc">
+                    <div class="medium-3 cell">
+                        <img src="mcc1.png" alt="music city center prototype">
+                    </div>
+                    <div class="medium-9 cell">
+                        <h2>Music City Center Wayfinding</h2>
+                        <h3>UX Case Study | UI Design</h3>
+                        <button type="button"><a href="music-city.php">Learn More</a></button>
+                    </div>
+            </div>
+        </section>
+        </div>
     </main>
- 
+    <script>
+        const scroller = scrollama();
+        var scrolly = document.querySelector("#scrolly");
+        var section = scrolly.querySelector("section");
+        var step = scrolly.querySelectorAll(".step");
 
+        function handleStepEnter(response){
+            console.log(response);
+            response.element.classList.add("is-active");
+        }
+
+        function handleStepExit(response){
+            console.log(response);
+            response.element.classList.remove("is-active");
+        }
+
+        function init(){
+            scroller.setup({
+                step: "#scrolly .step",
+                debug: false, 
+                offset: 0.5
+            })
+            .onStepEnter(handleStepEnter)
+            .onStepExit(handleStepExit);
+
+            window.addEventListener("resize", scroller.resize);
+        }
+
+        init();
+    </script>
 </body>
 </html>

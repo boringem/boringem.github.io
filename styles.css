@@ -2,25 +2,51 @@ html, body {
     height: 100%;
 }
 
+.top-half {
+    min-height: 60vh !important;
+}
+
+.mcc img {
+    width: 70%;
+    height: auto;
+}
+
+#scrolly {
+    position: relative;
+}
+
+.step {
+    height: 65vh;
+}
+
+.step.is-active {
+    background-color: #B8E3D6;
+}
+
+.step.mcc.is-active h2{
+    color: #0B1C48;
+}
+
+
 :root {
     --fillColor: #0B1C48;
 }
 
 h1 {
-    font-family: 'Stratos', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
 }
 
 h2 {
-    font-family: 'Stratos', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
     font-weight: 700;
     font-size: 2rem;
     color: #92CF93;
 }
 
 h3 {
-    font-family: 'Stratos-Lights', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
     font-weight: 200;
     font-size: 1.5rem;
 }
@@ -31,7 +57,7 @@ a {
 
 nav a {
     font-weight: 700;
-    font-family: 'Stratos', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
     color: #202020;
     font-size: 1.25rem;
     text-transform: lowercase;
@@ -98,13 +124,12 @@ footer {
     font-size: 0.9rem;
 }
 
-.image {
-    background-color: #92cf93;
-    background-size: cover;
-}
-
 a:hover {
     color: transparent;
     -webkit-text-stroke: 1px var(--fillColor);
     font-size: 1.5rem;
+}
+
+.init-back {
+    background-color: #f0f0f0;
 }
