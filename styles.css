@@ -6,10 +6,11 @@ html, body {
     min-height: 60vh !important;
 }
 
-.mcc img {
+.mcc img, img {
     width: 70%;
     height: auto;
 }
+
 
 #scrolly {
     position: relative;
