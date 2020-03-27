@@ -34,7 +34,7 @@ a.secondary {
     font-weight: 300;
 }
 a:hover {
-    color: #d5e4ed;
+    color: #92CF93;
 }
 
 #projects ul {
@@ -47,7 +47,7 @@ a:hover {
 #projects li {
     border-width: thin;
     border-style: solid;
-    border-color: #d5e4ed;
+    border-color: #92CF93;
     min-width: 98%;
     min-height: 25vh;
 }
