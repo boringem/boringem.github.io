@@ -1,112 +1,65 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Madelyn Vagle</title>
-<!-- CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://use.typekit.net/tgh4exf.css">
-<link rel="stylesheet" href="styles.css">
-
-<!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- JavaScript -->
-<script src="https://unpkg.com/intersection-observer"></script>
-<script src="https://unpkg.com/scrollama"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
-
-<!-- Starts Foundation -->
-<script type="text/javascript">
-	$(document).ready(function() {
-		$(document).foundation();
-	});
-</script>
-</head>
-
-<body>
-    <header class="grid-container">
-        <div class="grid-x">
-            <div class="medium-6 cell">
-                <a href="index.html"><h1>MADELYN VAGLE</h1></a>
-            </div>
-            <nav class="medium-6 cell">
-                <ul class="menu align-right">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+<!doctype HTML> <!-- HTML5 -->
+<html lang="en" dir="ltr"></html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>Madelyn Vagle</title>
+        <meta name="description" content="Web Development student located in Nashville, TN">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="menu" aria-label="Main menu">
+                <ul class="menu-list menu-right">
+                    <li class="menu-item"><a href="https://github.com/boringem" target="_blank"><img src="images/github.png" alt="github logo"></a></li>
+                    <li class="menu-item"><a href="https://www.linkedin.com/in/madelyn-vagle-842b76123" target="_blank"><img src="images/linkedin.png" alt="linked in logo"></a></li>
+                    <li class="menu-item"><a href="https://codepen.io/madelynvagle" target="_blank"><img src="images/codepen.png" alt="codepen logo"></a></li>
+                </ul>   
             </nav>
-        </div>
-    </header>
-    <main>
-        <section class="grid-container text-left margin-top-3 top-half">
-            <div class="grid-x">
-                <div class="medium-8 cell">
-                    <h2>I'm currently a web development student at Belmont University.</h2>
-                    <h3>I'm passionate about creating engaging user experiences, and using
-                    technology to make a positive impact on the world around me.
-                    </h3>
-                    <div class="grid-x">
-                            <div class="medium-2 cell">
-                                <img class="hey" src="construction.png" alt="construction emoji">
-                            </div>
-                            <div class="medium-8 cell">
-                                <p>my portfolio is under construction, but in the meantime, check out my <strong><a href="https://github.com/boringem">github</a></strong> to see my code!</p>
-                            </div>
-                        </div>
-                    <button type="button"><a href="#work">See My Work</a></button>
-                </div>
-                <div class="medium-4 cell text-center">
-                    <img src="laptop@2x.png" alt="laptop vector">
-                </div>
-            </div>
+        </header>
+        <main>
+        <section>
+            <h1>Hi, my name is Madelyn</h1>
+            <h2>I'm currently a web development student in my senior year at Belmont University.</h2>
+            <p>View all my code on <a href="https://github.com/boringem">github</a>, or you can take a look
+            at the links below to see some of my favorite work.</p>
         </section>
-        <div id="scrolly">
-        <section id="work">
-            <div class="grid-x margin-top-3 init-back step mcc">
-                    <div class="medium-3 cell">
-                        <img src="mcc1.png" alt="music city center prototype">
-                    </div>
-                    <div class="medium-9 cell">
-                        <h2>Music City Center Wayfinding</h2>
-                        <h3>UX Case Study | UI Design</h3>
-                        <button type="button"><a href="music-city.php">Learn More</a></button>
-                    </div>
-            </div>
+        <section id="projects">
+            <ul>
+                <li>
+                    <a href="http://madelynvagle.me/my-names-jared/">Virtual Piano</a>
+                    <p>This project uses P5.js and an HTML5 canvas to show the correlation between
+                        piano keys and notes on a staff. It also provides a waveform visual for each note
+                        that you play. It was built for VandyHacks 2019. 
+                    </p>
+                    <a class="secondary" href="https://github.com/boringem/my-names-jared">Repository</a>
+                </li>
+                <li>
+                    <a href="https://madelynv.sgedu.site/studio-work/">WordPress Audio Player</a>
+                    <p>An audio player designed to work with a custom WordPress theme. It filters audio files
+                        based on tags, organizes them into a player, and displays information about the currently
+                        playing track. 
+                    </p>
+                    <a class="secondary" href="https://github.com/boringem/wordpress-audio">Repository</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://madelyndinosaurs.000webhostapp.com/">Create a Dinosaur</a>
+                    <p>A class project for a web development class. It was built on a LAMP stack, and originally deployed
+                        on AWS. You can use this site to adopt your own pet dinosaur, and find out some fun facts about it.
+                    </p>
+                    <a class="secondary" href="https://github.com/boringem/create-a-dino/">Repository</a>
+                </li>
+                <li>
+                    <a href="http://madelynf18.bu-web.com/MVagle-Project2/">Sable and Flea</a>
+                    <p>A project done for my intro to web design class in sophomore year. </p>
+                </li>
+            </ul>
         </section>
-        </div>
-    </main>
-    <script>
-        const scroller = scrollama();
-        var scrolly = document.querySelector("#scrolly");
-        var section = scrolly.querySelector("section");
-        var step = scrolly.querySelectorAll(".step");
-
-        function handleStepEnter(response){
-            console.log(response);
-            response.element.classList.add("is-active");
-        }
-
-        function handleStepExit(response){
-            console.log(response);
-            response.element.classList.remove("is-active");
-        }
-
-        function init(){
-            scroller.setup({
-                step: "#scrolly .step",
-                debug: false, 
-                offset: 0.5
-            })
-            .onStepEnter(handleStepEnter)
-            .onStepExit(handleStepExit);
-
-            window.addEventListener("resize", scroller.resize);
-        }
-
-        init();
-    </script>
-</body>
+        </main>
+    </body>
 </html>

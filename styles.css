@@ -1,136 +1,53 @@
-html, body {
+body, html {
     height: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.top-half {
-    min-height: 60vh !important;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.mcc img, img {
-    width: 70%;
-    height: auto;
-}
-
-
-#scrolly {
-    position: relative;
-}
-
-.step {
-    height: 65vh;
-}
-
-.step.is-active {
-    background-color: #B8E3D6;
-}
-
-.step.mcc.is-active h2{
-    color: #0B1C48;
-}
-
-
-:root {
-    --fillColor: #0B1C48;
+li {
+    float: left;
+    padding: 1%;
 }
 
 h1 {
-    font-family: 'Proxima Nova', sans-serif;
     font-weight: 700;
-    font-size: 2.5rem;
 }
 
 h2 {
-    font-family: 'Proxima Nova', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    color: #92CF93;
-}
-
-h3 {
-    font-family: 'Proxima Nova', sans-serif;
-    font-weight: 200;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 a {
-    color: #202020;
-}
-
-nav a {
-    font-weight: 700;
-    font-family: 'Proxima Nova', sans-serif;
-    color: #202020;
-    font-size: 1.25rem;
-    text-transform: lowercase;
-}
-
-header a:hover {
-    color: transparent;
-    -webkit-text-stroke: 1px var(--fillColor);
-    font-size: 1.5rem;
-}
-
-@supports not(-webkit-text-stroke: 2px black) {
-    a:hover {
-        text-shadow: 
-            3px 3px 0 var(--fillColor),
-            -1px -1px 0 var(--fillColor),
-            1px -1px 0 var(--fillColor),
-            -1px 1px 0 var(--fillColor),
-            1px 1px 0 var(--fillColor);
-    }
-}
-
-.margin-top-3 {
-    margin-top: 5rem;
-}
-
-.margin-top-1 {
-    margin-top: 3rem;
-}
-
-p {
-    font-family: 'Lora', serif;
-}
-
-button {
-    background-color: #0B1C48;
-    padding: 1rem;
-    border-style: hidden;
-    border-width: 2px;
-    border-radius: 10px !important;
-}
-
-button a {
-    color: #ffffff;
+    color: #737373;
+    text-decoration: none;
     font-weight: 700;
 }
 
-button a:hover {
-    color: #0b1c48;
+a.secondary {
+    font-weight: 300;
 }
-
-button:hover {
-    background-color: #ffffff;
-    border-style: solid;
-    border-color: #0b1c48;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-size: 0.9rem;
-}
-
 a:hover {
-    color: transparent;
-    -webkit-text-stroke: 1px var(--fillColor);
-    font-size: 1.5rem;
+    color: #d5e4ed;
 }
 
-.init-back {
-    background-color: #f0f0f0;
+#projects ul {
+    list-style-type: none;
+    width: 48%;
+    padding-left: 0;
+    float: left;
+}
+
+#projects li {
+    border-width: thin;
+    border-style: solid;
+    border-color: #d5e4ed;
+    min-width: 98%;
+    min-height: 25vh;
 }
