@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adopt a Dinosaur</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css" integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg==" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ilf5yaj.css">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+    <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./shower.js"></script>
+
+    <!-- Starts Foundation -->
+    <script type="text/javascript">
+	    $(document).ready(function() {
+		    $(document).foundation();
+	    });
+    </script>
+
+</head>
+<body>
+    <header class="grid-container">
+        <nav class="grid-x">
+            <div class="medium-9 cell">
+                <h3><a href="index.html">Madelyn Vagle</a></h3>
+            </div>
+            <div class="medium-3 cell">
+                <ul class="menu align-right">
+                    <li><a href="index.html#work">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/madelyn-vagle-842b76123/" target="_blank">
+                            <img src="./images/linkedin.png" alt="linkedin icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="github.com/boringem" target="_blank">
+                            <img src="./images/github.png" alt="github icon" />
+                        </a>
+                    </li>  
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="grid-x ds-hero proj-text">
+            <div class="medium-4 cell align-self-middle">
+                <img src="./images/ds1.png" alt="dinosaur website homepage" />  
+            </div> 
+            <div class="medium-7 medium-offset-1 cell align-self-middle">
+                <h1>Adopt a Dinosaur</h1>
+                <p>Class Project. <br /> Adopt and learn about dinosaurs!</p>
+                <a href="https://madelyndinosaurs.000webhostapp.com/">View the site</a>
+            </div>   
+        </div> 
+        <div class="grid-x grid-padding-x grid-padding-y">   
+            <div class="medium-4 cell">
+                <img src="./images/ds2.png" alt="dinosaur site create" />   
+            </div>
+            <div class="medium-8 cell">
+                <h3>About the Project</h3> 
+                <p>
+                    A site made as the final project for a website development class. It was built on a LAMP stack, and uses 
+                    a database to handle authentication and store user created dinosaurs. Users can create and view information about 
+                    their dinosaurs. To login, use the username and password 'test.'   
+                </p>   
+            </div>
+        </div>
+        <div class="grid-x grid-padding-x grid-padding-y">
+            <div class="medium-2 cell text-left">
+                <a class="next-button" href="wordpress.html">Previous Project</a>
+            </div>
+            <div class="medium-2 medium-offset-8 cell text-right">
+                <a class="next-button" href="mcc.html">Next Project</a>
+            </div>
+        </div>  
+    </main>
+</body>
