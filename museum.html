@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Museum Kiosk</title>
+
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ilf5yaj.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script src="https://kit.fontawesome.com/ed20810b83.js" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <header>
+            <button onclick="toggleMenu()" class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger">
+                    <i class="fas fa-bars" id="hamburger"></i>
+                    <i class="fas fa-times" id="close"></i>
+                </span>
+            </button>
+            <nav>
+                <ul class="nav-list" id="navigation">
+                    <li class="nav-item-left">
+                        <a href="index.html" class="nav-link"><h3>Madelyn Vagle</h3></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="project-two-hero project-hero">
+            <img src="img/museum-thumbnail.png" alt="museum kiosk thumbnail image" class="project-image-hero">
+            <div class="hero-description">
+                <h2 class="section-title section-title-project">Illustrating Immigration</h2>
+                <p class="section-subtitle section-subtitle-project">A prototype for a museum kiosk done for a class project. 
+                This kiosk was designed with the National Archives in mind, and uses images and posters 
+                from their collections to explore how immigration has been discussed in American history.
+                </p>
+            </div>
+        </section>
+        <section class="image-text-grid">
+            <div class="overview-text">
+                <h3 class="section-title">Project Overview</h3>
+                <p class="section-text">
+                    The goal of this project was to make an interactive prototype for a museum kiosk that worked in tandem
+                    with an exhibit. I chose to make a kiosk that fit with some of the themes in the Records of Rights exhibit
+                    at the National Archives. I used comics, posters, and illustrations to give an overview of American perceptions 
+                    of immigration over time.
+                </p>
+                <p class="section-text">
+                    This project explored the concept of scale, and gave me an opportunity to think about interaction
+                    outside of the typical mobile or desktop context.
+                </p>
+            </div>
+            <div class="overview-image">
+                <figure>
+                    <img src="img/museum-scale-thumbnail.png" alt="scale of the museum kiosk" class="project-image">
+                    <figcaption>Scale of the kiosk.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="project-details">
+            <h3 class="section-title">Project Details</h3>
+            <div class="image-list">
+                <figure class="image-list-item">
+                    <img src="img/museum-1.gif" alt="museum kiosk choose a time period gif">
+                    <figcaption>Each region has a selection of important dates.</figcaption>
+                </figure>
+                <figure class="image-list-item">
+                    <img src="img/museum-2.gif" alt="museum kiosk time period detail gif">
+                    <figcaption>For each date, there are three illustrations covering important developments.</figcaption>
+                </figure>
+                <figure class="image-list-item">
+                    <img src="img/museum-3.gif" alt="museum kiosk illustration detail gif">
+                    <figcaption>The perspectives and context of each image is explained in more depth.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="image-text-grid">
+            <div class="details-text">
+                <h3 class="section-title">Challenges</h3>
+                <p class="section-text">
+                    One of the main challenges I encountered had to do with the large scale of the kiosk. I wanted to ensure that I could
+                    fit all of the information I needed under each section, but the height of the screen meant that most 
+                    of the navigation had to be in the middle so that people could reach it easily. 
+                </p>
+                <p class="section-text">
+                    The pages for the individual images were the most challenging in this respect. I wanted the image to
+                    be the focal point of the page, but I also needed to put text underneath them. I settled on highlighting 
+                    different portions of the image with buttons, and having each button correspond with a different fact. 
+                </p>
+            </div>
+            <div class="details-image">
+                <figure class="image-list-item">
+                    <img src="img/museum-4.gif" alt="museum kiosk full user flow gif">
+                    <figcaption>Here's how it looks together.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="project-navigation">
+            <a href="lms.html" class="btn">Previous Project</a>
+            <a href="shower.html" class="btn project-next-btn">Next Project</a>
+        </section>        
+        <footer>
+            <ul class="social-list">
+                <li class="social-list-item">
+                    <a href="https://www.github.com/boringem" class="social-list-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a href="https://www.linkedin.com/in/madelyn-vagle-842b76123/" class="social-list-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+    </html>

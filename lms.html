@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online Learning</title>
+
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ilf5yaj.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script src="https://kit.fontawesome.com/ed20810b83.js" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <header>
+            <button onclick="toggleMenu()" class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger">
+                    <i class="fas fa-bars" id="hamburger"></i>
+                    <i class="fas fa-times" id="close"></i>
+                </span>
+            </button>
+            <nav>
+                <ul class="nav-list" id="navigation">
+                    <li class="nav-item-left">
+                       <a href="index.html" class="nav-link"><h3>Madelyn Vagle</h3></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="project-one-hero project-hero">
+            <img src="img/lms-thumbnail.png" alt="lecture thumbnail image" class="project-image-hero">
+            <div class="hero-description">
+                <h2 class="section-title section-title-project light-text">Online Lectures</h2>
+                <p class="section-subtitle-project section-subtitle light-text">
+                    The switch to online classes for the spring of 2020 was difficult for both students and professors,
+                    but many of those difficulties were a result of complicated online tools. For one of my final projects, I 
+                    did a case study on an LMS, and attempted to design a simpler solution.
+                </p>
+            </div>
+        </section>
+        <section class="project-overview">
+            <h3 class="section-title">How Can Online Learning Mimic the Classroom?</h3>
+            <p class="section-text">
+                When classes moved online spring semester, my professors, my classmates, and I all expressed
+                frustration with the feeling of disconnect that comes with online learning. Things that were easy
+                to do in the classroom (using a presentation, answering questions, and even meeting synchronously)
+                were difficult to accomplish online.
+            </p>
+            <p class="section-text">
+                These challenges were made worse because many of my classes used multiple platforms, making it 
+                difficult to keep track of what was happening when, or where. I wanted to design a platform that 
+                included all the major facets of in person learning, without the need to learn multiple different 
+                softwares.
+            </p>
+            <hr />
+        </section>
+        <section class="project-details">
+            <h3 class="section-title">The Questions</h3>
+            <ul class="section-text">
+                <li>
+                    How can the time spent on setup in online classes be minimized, and actual teaching time increased?
+                </li>
+                <li>How can professors keep track of attendance and ensure students know when lectures are 
+                    happening in a non-invasive way? 
+                </li>
+                <li>
+                    What makes students feel disconnected from the online learning process? What makes professors feel overwhelmed
+                    when transitioning to online teaching? 
+                </li>
+            </ul>
+            <h3 class="section-title">The Research</h3>
+            <p class="section-text">
+                After surveying both students and professors, I had a better idea of what each group's ideal 
+                online learning environment would look like. 
+            </p>
+            <div class="projects">
+                <figure>
+                    <img src="img/reminder.png" alt="reminder notification screen" class="project-image">
+                    <figcaption style="padding-top: 0.5em">
+                        <h3>Students wanted...</h3>
+                        <p class="section-text">
+                            An easy way to get reminders of when classes were taking place and one place to view all communication
+                            from professors. 
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/hand-raised.png" alt="hand raised notification screen" class="project-image">
+                    <figcaption style="padding-top: 0.5em">
+                        <h3>Teachers wanted...</h3>
+                        <p class="section-text">An intuitive way to share presentations, a way to see if students were actively present in the classroom, 
+                        and more control over answering student questions.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <h3>Wireframes</h3>
+            <div class="image-list-secondary">
+                <figure class="image-list-item">
+                    <img src="img/lecture-wireframe.png" alt="lecture page wireframe" class="project-image" />
+                    <figcaption>Lecture beginning wireframe</figcaption>
+                </figure>
+                <figure class="image-list-item">
+                    <img src="img/lecture-final.png" alt="lecture page final" class="project-image" />
+                    <figcaption>Lecture beginning final page</figcaption>
+                </figure>
+                <figure class="image-list-item">
+                    <img src="img/intro-wireframe.png" alt="homepage wireframe" class="project-image" />
+                    <figcaption>Homepage wireframe</figcaption>
+                </figure>
+                <figure class="image-list-item">
+                    <img src="img/intro-final.png" alt="homepage final" class="project-image" />
+                    <figcaption>Homepage final page</figcaption>
+                </figure>
+            </div>
+            <h3>User Testing</h3>
+            <p class="section-text">
+                Conducting user tests with eight users allowed me to identify pain points
+                and places where my design fell short. After hearing feedback, I refined my design to fix two main 
+                difficulties that were present. 
+            </p>
+            <ul class="section-text">
+                <li>Confirmation of when reminders were sent</li>
+                <li>Adding an easy way to end the lecture</li>
+            </ul>
+            <h3>Final Product</h3>
+            <video controls>
+                <source src="img/lms.mp4" type="video/mp4">
+                Your browser does not support HTML5 video. 
+            </video>
+        </section>
+        <section class="project-navigation">
+            <a href="museum.html" class="btn project-next-btn">Next Project</a>
+        </section>
+        <footer>
+            <ul class="social-list">
+                <li class="social-list-item">
+                    <a href="https://www.github.com/boringem" class="social-list-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a href="https://www.linkedin.com/in/madelyn-vagle-842b76123/" class="social-list-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+    </html>

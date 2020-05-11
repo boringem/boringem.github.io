@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Madelyn Vagle</title>
+
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ilf5yaj.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script src="https://kit.fontawesome.com/ed20810b83.js" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <header>
+            <button onclick="toggleMenu()" class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger">
+                    <i class="fas fa-bars" id="hamburger"></i>
+                    <i class="fas fa-times" id="close"></i>
+                </span>
+            </button>
+            <nav>
+                <ul class="nav-list" id="navigation">
+                    <li class="nav-item-left">
+                        <a href="index.html" class="nav-link"><h3>Madelyn Vagle</h3></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--INTRODUCTION-->
+        <section class="intro">
+            <h1 class="section-title">
+                Hi, I'm Madelyn.
+            </h1>
+            <p class="section-subtitle section-subtitle-intro">
+                I'm a web developer with a passion for creating meaningful user experiences.
+            </p>
+            <img class="intro-img" src="img/illustration-home.png" alt="cat sitting on laptop">
+        </section>
+
+        <!--PROJECTS-->
+        <section class="portfolio-projects" id="projects">
+            <div class="projects">
+                <div class="project project-one">
+                    <div class="ovl-content">
+                        <img src="img/lms-thumbnail.png" alt="online learning thumbnail image" class="project-image">
+                        <div class="ovly-text-one">
+                            <div class="ovly-text">
+                                <h3 class="section-title">Online Lectures</h3>
+                                <p class="section-subtitle">An LMS case study done for a class project, attempting to make online learning 
+                                    easier for students and teachers. </p>
+                                <a href="lms.html" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--Project One-->
+                <div class="project project-two">
+                    <div class="ovl-content">
+                        <img src="img/museum-thumbnail.png" alt="museum kiosk thumbnail image" class="project-image">
+                        <div class="ovly-text-two">
+                            <div class="ovly-text">
+                                <h3 class="section-title">Illustrating Immigration</h3>
+                                <p class="section-subtitle">An interactive museum kiosk prototype, exploring
+                                    American perceptions of immigration over time.
+                                </p>
+                                <a href="museum.html" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--Project Two-->
+                <div class="project project-three">
+                    <div class="ovl-content">
+                        <img src="img/shower-thumbnail.png" alt="smart shower thumbnail image" class="project-image">
+                        <div class="ovly-text-three">
+                            <div class="ovly-text">
+                                <h3 class="section-title">Smart Shower</h3>
+                                <p class="section-subtitle">A shower experience designed to save water.</p>
+                                <a href="shower.html" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--Project Three-->       
+                <div class="project project-four">
+                        <div class="ovl-content">
+                            <img src="img/wordpress-thumbnail.png" alt="wordpress theme thumbnail image" class="project-image">
+                            <div class="ovly-text-four">
+                                <div class="ovly-text ovly-text-desktop">
+                                <h3 class="section-title">Wordpress Audio Theme</h3>
+                                <p class="section-subtitle">Theme and plugin development for an audio engineering portfolio.</p>
+                                <a href="wordpress.html" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--Project Four-->      
+                <div class="project project-five">
+                        <div class="ovl-content">
+                            <img src="img/piano-thumbnail.png" alt="virtual piano thumbnail image" class="project-image">
+                            <div class="ovly-text-five">
+                                <div class="ovly-text ovly-text-desktop">
+                                <h3 class="section-title">Virtual Piano</h3>
+                                <p class="section-subtitle">A virtual keyboard that correlates piano keys with sheet music. Built for VandyHacks.</p>
+                                <a href="piano.html" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--Project Five-->    
+                <div class="project project-six">
+                        <div class="ovl-content">
+                            <img src="img/dinosaur-thumbnail.png" alt="dinosaur thumbnail image" class="project-image">
+                            <div class="ovly-text-six">
+                                <div class="ovly-text ovly-text-desktop">
+                                <h3 class="section-title">Adopt a Dinosaur</h3>
+                                <p class="section-subtitle">Adopt and learn about different dinosaurs. Built on a LAMP stack.</p>
+                                <a href="dinosaur.html" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--Project Six-->            
+            </div>
+        </section>
+        <footer>
+            <ul class="social-list">
+                <li class="social-list-item">
+                    <a href="https://www.github.com/boringem" class="social-list-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a href="https://www.linkedin.com/in/madelyn-vagle-842b76123/" class="social-list-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

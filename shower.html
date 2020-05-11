@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smart Shower</title>
+
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ilf5yaj.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script src="https://kit.fontawesome.com/ed20810b83.js" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+        <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="js/shower.js"></script>
+    </head>
+    <body onload="loadGraph()">
+        <header>
+            <button onclick="toggleMenu()" class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger">
+                    <i class="fas fa-bars" id="hamburger"></i>
+                    <i class="fas fa-times" id="close"></i>
+                </span>
+            </button>
+            <nav>
+                <ul class="nav-list" id="navigation">
+                    <li class="nav-item-left">
+                        <a href="index.html" class="nav-link"><h3>Madelyn Vagle</h3></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="project-three-hero project-hero">
+            <img src="img/shower-thumbnail.png" alt="smart shower thumbnail image" class="project-image-hero">
+            <div class="hero-description">
+                <h2 class="section-title section-title-project">Smart Shower</h2>
+                <p class="section-subtitle section-subtitle-project">
+                    A shower experience that saves water, money, and time. 
+                </p>
+            </div>
+        </section>
+        <section class="image-text-grid">
+            <div class="overview-text">
+                <h3 class="section-title">The average shower uses 2.1 gallons of water per minute.</h3>
+                <p class="section-text">Showering for twenty minutes, four times a week uses <strong>8,736</strong> gallons of water a year.</p>
+                <p class="section-text">Cutting down by five minutes a shower saves <strong>2,184</strong> of those gallons.</p>
+                <h3 class="section-title">So...what stands in the way?</h3>
+                <ul class="section-text">
+                    <li>A traditional timer does not allow users to view their history.</li>
+                    <li>Calculating water usage is complex and time consuming.</li>
+                    <li>The information needed is difficult to access.</li>
+                </ul>
+                <h3 class="section-title">How can smart home technology help?</h3>
+                <ul class="section-text">
+                    <li>A smart showerhead could capture all necessary data.</li>
+                    <li>The app would handle all calculations, and the data would be personalized.</li>
+                    <li>Information would be displayed in an easy to digest format, and be tracked over time.</li>
+                </ul>
+            </div>
+            <figure>
+                <svg width="400" height="400"></svg>
+            </figure>
+        </section>
+        <section class="text-image-grid">
+            <figure>
+                <img src="img/shower-flow.jpg" alt="shower wireframe sketch">
+            </figure>
+            <div>
+                <h3 class="section-title">The Process</h3>
+                <p class="section-text">
+                    I spent considerable time designing the onboarding process. When I was analyzing existing smart shower 
+                    applications, I noticed that the setup could be confusing. Oftentimes, apps asked users to create 
+                    their settings with no assistance. Many people don't know off the top of their head what temperature 
+                    their shower is. I wanted to create an onboarding experience that helped users discover that 
+                    information. 
+                </p>
+                <p class="section-text">
+                    I also focused on the layout of the statistics section of the application. I needed it to be 
+                    able to switch quickly between different types of data, but also be clear and easy to read. 
+                    Because the water usage portion was the most important, I wanted to make sure that changes in 
+                    water usage over time were very clear. 
+                </p>
+            </div>
+        </section>
+        <section>
+            <h3 class="section-title centered">The Product</h3>
+            <h4>Icons and Buttons</h4>
+            <p class="section-text">
+                These buttons are used during the onboarding process, when the user selects which statistics 
+                to keep track of. I used iconography on a card based layout to ensure that the options were clear. 
+            </p>
+            <div class="image-list">
+                <figure class="image-list-item">
+                    <img src="img/temp-icon.png" alt="temperature icon">
+                    <figcaption>Temperature Icon</figcaption>
+                </figure>
+                <figure class="image-list-item">
+                    <img src="img/water-icon.png" alt="water usage icon">
+                    <figcaption>Water Usage Icon</figcaption>
+                </figure>
+                <figure class="image-list-item">
+                    <img src="img/duration-icon.png" alt="duration icon">
+                    <figcaption>Duration Icon</figcaption>
+                </figure>
+            </div>
+            <h4>Onboarding Process</h4>
+            <p class="section-text">
+                I decided to use two onboarding processes. One allows the user to take a shower and records 
+                the temperature, duration, and water used during that shower. Following the shower, the user 
+                can edit the settings, or save it as a preference. The second has the user choose their settings 
+                manually, in case they don't want to have to take a shower to setup the app. 
+            </p>
+            <h4>Statistics</h4>
+            <p class="section-text">
+                The statistics screen allows the user to view the data that they have selected to track. 
+                Users can switch between views, or edit the statistics they want to keep track of. 
+            </p>
+            <div class="image-list">
+                <figure>
+                    <img src="img/take-shower.png" alt="take a shower setup">
+                    <figcaption>Setup by taking a shower</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/manual-shower.png" alt="manual setup">
+                    <figcaption>Manual setup</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/shower-stats.png" alt="shower statistics page">    
+                    <figcaption>Shower statistics</figcaption>
+                </figure>
+            </div>        
+        </section>
+        <section class="project-navigation">
+            <a href="museum.html" class="btn">Previous Project</a>
+            <a href="wordpress.html" class="btn project-next-btn">Next Project</a>
+        </section>
+        <footer>
+            <ul class="social-list">
+                <li class="social-list-item">
+                    <a href="https://www.github.com/boringem" class="social-list-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a href="https://www.linkedin.com/in/madelyn-vagle-842b76123/" class="social-list-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+    </html>
