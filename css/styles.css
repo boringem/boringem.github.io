@@ -27,6 +27,7 @@ html, body {
     --clr-four: #ebeaea;
     --clr-five: #b7b7e3;
     --clr-six: #f4d91b;
+    --clr-seven: #3F52BB;
 
     --fs-h1: 2.75rem;
     --fs-h2: 2.0rem;
@@ -234,6 +235,7 @@ h3 { font-size: var(--fs-h3); }
 .project-four, .ovly-text-four {background: var(--clr-four); }
 .project-five, .ovly-text-five {background: var(--clr-five); }
 .project-six, .ovly-text-six {background: var(--clr-six); }
+.project-seven, .ovly-text-seven {background: var(--clr-seven); }
 
 @media (max-width: 599px) {
 .projects {
@@ -304,7 +306,8 @@ h3 { font-size: var(--fs-h3); }
     .ovly-text-three, 
     .ovly-text-four, 
     .ovly-text-five, 
-    .ovly-text-six {
+    .ovly-text-six, 
+    .ovly-text-seven {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -321,7 +324,8 @@ h3 { font-size: var(--fs-h3); }
     div.ovly-text-three:hover,
     div.ovly-text-four:hover,
     div.ovly-text-five:hover,
-    div.ovly-text-six:hover {
+    div.ovly-text-six:hover,
+    div .ovly-text-seven:hover {
         opacity: 1;
     }
 }
@@ -444,6 +448,7 @@ h3 { font-size: var(--fs-h3); }
 .project-four-hero { background: var(--clr-four); }
 .project-five-hero { background: var(--clr-five); }
 .project-six-hero { background: var(--clr-six); }
+.project-seven-hero { background: var(--clr-seven); }
 
 rect {
     fill: #4FBBD2;
