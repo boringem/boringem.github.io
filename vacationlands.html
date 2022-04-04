@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>1946 Vacationlands</title>
+
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ilf5yaj.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script src="https://kit.fontawesome.com/ed20810b83.js" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <header>
+            <button onclick="toggleMenu()" class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger">
+                    <i class="fas fa-bars" id="hamburger"></i>
+                    <i class="fas fa-times" id="close"></i>
+                </span>
+            </button>
+            <nav>
+                <ul class="nav-list" id="navigation">
+                    <li class="nav-item-left">
+                        <a href="index.html" class="nav-link"><h3>Madelyn Vagle</h3></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="project-seven-hero project-hero">
+            <img src="img/vacationlands-thumbnail.png" alt="Vacationlands thumbnail image" class="project-image-hero">
+            <div class="hero-description">
+                <h2 class="section-title section-title-project">Vacationlands 1946</h2>
+                <p class="section-subtitle section-subtitle-project">A prototype for a museum kiosk done for a class project. 
+                This kiosk was designed with Omaha's Durham Museum in mind, and uses the 1946 Union Pacific Western Vacationlands brochure to 
+                explore how rail travel interacted with narratives surrounding the American West. 
+                </p>
+            </div>
+        </section>
+        <section class="image-text-grid">
+            <div class="overview-text">
+                <h3 class="section-title">Project Overview</h3>
+                <p class="section-text">
+                    The goal of this project was to make an interactive prototype for a museum kiosk that worked in tandem
+                    with an exhibit. I chose to design my kiosk with the 'Exhibit' exhibit in mind. This exhibit contains a large amount of railroad memorabilia including similar travel pamphlets to 
+                    the one shown in this project. All of the illustrations were done by [Illustrator Name]. The digital versions on the kiosk were scanned from a personal copy of this brochure, and the full PDF of this scan can be viewed <a href="vacationlands_scan.pdf" target="_blank">here</a>. 
+                </p>
+                <p class="section-text">
+                    This project also explored the concept of scale, and gave me an opportunity to think about interaction
+                    outside of the typical mobile or desktop context.
+                </p>
+            </div>
+            <div class="overview-image">
+                <figure>
+                    <img src="img/vacationlands-scale-thumbnail.png" alt="scale of the museum kiosk" class="project-image">
+                    <figcaption>Scale of the kiosk.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="project-details">
+            <h3 class="section-title">Project Details</h3>
+            <div class="image-list">
+                <figure class="image-list-item">
+                    <img src="img/vacationlands-1.png" alt="Select a Destination screen">
+                    <figcaption>Users select one of the six destinations in the brochure: California, Colorado, Idaho, Oregon, Utah, or Wyoming.</figcaption>
+                </figure>
+                <figure class="image-list-item">
+                    <img src="img/vacationlands-2.png" alt="Destination Overview screen">
+                    <figcaption>Each destination has a featured quote from the brochure with three buttons for further details.</figcaption>
+                </figure>
+                <figure class="image-list-item">
+                    <img src="img/vacationlands-3.png" alt="Destination Detail screen">
+                    <figcaption>Each highlighted section of text corresponds to a different "travel theme". These were inspired by modern destination websites.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="image-text-grid">
+            <div class="details-text">
+                <h3 class="section-title">Challenges</h3>
+                <p class="section-text">
+                    One of the main challenges I encountered had to do with the large scale of the kiosk. I wanted to ensure that I could
+                    fit all of the information I needed under each section, but the height of the screen meant that most 
+                    of the navigation had to be in the middle.  
+                </p>
+            </div>
+            <div class="details-image">
+                <figure class="image-list-item">
+                    <img src="img/vacationlands-4.gif" alt="museum kiosk full user flow gif">
+                    <figcaption>The entire experience put together.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="project-navigation">
+            <a href="lms.html" class="btn">Previous Project</a>
+            <a href="shower.html" class="btn project-next-btn">Next Project</a>
+        </section>        
+        <footer>
+            <ul class="social-list">
+                <li class="social-list-item">
+                    <a href="https://www.github.com/boringem" class="social-list-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a href="https://www.linkedin.com/in/madelyn-vagle-842b76123/" class="social-list-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
