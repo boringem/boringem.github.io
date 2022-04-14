@@ -388,6 +388,7 @@ h3 { font-size: var(--fs-h3); }
         grid-row-gap: 0;
         grid-column-gap: 0;
         margin-bottom: 3em;
+        margin-left: 5px;
     }
 
     .project-image-hero {
